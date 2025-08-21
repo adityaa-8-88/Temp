@@ -46,7 +46,7 @@
   [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748) `[BUG]veristand.exe`  
   [USER STORY 3185837](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185837) `Resource Cleanup`
 
-  <img width="600" height="200" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" /><br>
+  <img width="650" height="250" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" /><br>
 
   - Called `CloseVIAsync()` which was not being called earlier → **solved half of the test cases**  
   - Introduced `Unsubscribe()` using `Dispose()` for each VI close event  
