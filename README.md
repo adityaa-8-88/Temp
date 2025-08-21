@@ -43,14 +43,14 @@
 ---
 
 - `Veristand.exe` no longer remains in the task manager (part of Resource Cleanup)  
-  [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748)
-  
+  [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748) `[BUG]veristand.exe`  
+  [USER STORY 3185837](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185837) `Resource Cleanup`
+
   <img width="600" height="200" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" /><br>
-  
-  - Called `CloseVIAsync()` which was not being called earlier `--solved half of the test cases`
-  - Introducted `Unsubscribe()` using `Dispose()` for each VI close event
-    <br>
-    
+
+  - Called `CloseVIAsync()` which was not being called earlier → **solved half of the test cases**  
+  - Introduced `Unsubscribe()` using `Dispose()` for each VI close event  
+
   <img width="821" height="600" alt="image" src="https://github.com/user-attachments/assets/e6c2265e-f111-4a8f-885c-a3d56fb57ce2" />
 
 ---
@@ -74,12 +74,6 @@
 
 ---
 
-- **[Bug] Fix Application Exit Process Cleanup**  
-  `veristand.exe` remaining in task manager – threading issue in unsubscribe event  
-  (part of Resource cleanup)  
-  [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748),  
-  [USER STORY 3185837](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185837)
-
 - **Array and DataSource not implemented/tested yet**  
   [USER STORY 3185762](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185762)
 
@@ -90,11 +84,21 @@
 
 ## Reference to Flow Diagram (my understanding till now)
 
+---
+
 <img width="4647" height="2627" alt="diagram-export-8-20-2025-3_15_47-PM" src="https://github.com/user-attachments/assets/943d35fa-74e9-47de-ae2c-e4f58f91fda3" />
 
 ---
 
 ## Suggestions
-- Reducing Redundancy
-  - There are multiple `model` files storing the same or overlapping information.
-  - Can we explore integrating these into **one or fewer models** to reduce redundancy, improve maintainability, and simplify the structure?  
+
+---
+
+### 🔹 Reducing Redundancy
+- There are multiple `model` files storing the same or overlapping information.  
+- Can we explore integrating these into **one or fewer models** to:  
+  - Reduce redundancy  
+  - Improve maintainability  
+  - Simplify the structure  
+
+---
