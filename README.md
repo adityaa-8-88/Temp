@@ -42,23 +42,20 @@
 
 ---
 
-- `Veristand.exe` no longer remains in the task manager (part of Resource Cleanup)  
+- `Veristand.exe` no longer remains in the task manager  
   [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748) `[BUG]veristand.exe`  
-  [USER STORY 3185837](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185837) `Resource Cleanup`
 
   <img width="650" height="250" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" /><br>
 
   - Called `CloseVIAsync()` which was not being called earlier → **solved half of the test cases**  
-  - Introduced `Unsubscribe()` using `Dispose()` for each VI close event  
-
-  <img width="821" height="600" alt="image" src="https://github.com/user-attachments/assets/e6c2265e-f111-4a8f-885c-a3d56fb57ce2" />
+  - Ensured proper calling and now its closing `veristand.exe` for all test cases
 
 ---
 
 - **Control Library**: tested types → String, Boolean, File path, Numeric  
   [USER STORY 3185762](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185762)
 
-  <img width="380" height="300" alt="Screenshot 2025-08-20 135143" src="https://github.com/user-attachments/assets/8e215430-fcbc-4a08-a07d-f2a239b6c41b" />
+  <img width="380" height="300" alt="Screenshot 2025-08-20 135143" src="https://github.com/user-attachments/assets/0216d3f0-bf85-4ca5-8838-c2f4ecd4b3a2" />
 
 ---
 
@@ -74,11 +71,11 @@
 
 ---
 
-- **Array and DataSource not implemented/tested yet**  
+- **Resource Cleanup** : Trying to implement IDisposable pattern  
+  [USER STORY 3185837](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185837)
+  
+- **Array and DataSource not implemented/tested yet**  + **Trying collapsible section and grouping**  
   [USER STORY 3185762](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185762)
-
-- **Trying collapsible section and grouping**  
-  [USER STORY 3185761](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185761)
 
 ---
 
