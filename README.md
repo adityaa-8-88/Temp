@@ -1,5 +1,13 @@
 # Labview Custom Controls - C#
 
+## Table of Contents
+- [Completed Tasks](#completed-tasks)
+- [Currently Working On](#currently-working-on)
+- [Reference to Flow Diagram (my understanding till now)](#reference-to-flow-diagram-my-understanding-till-now)
+- [Suggestions](#suggestions)
+
+---
+
 ## Completed Tasks
 
 ---
@@ -77,3 +85,10 @@
 ## Reference to Flow Diagram (my understanding till now)
 
 <img width="4647" height="2627" alt="diagram-export-8-20-2025-3_15_47-PM" src="https://github.com/user-attachments/assets/943d35fa-74e9-47de-ae2c-e4f58f91fda3" />
+
+---
+
+## Suggestions
+- Reducing Redundancy
+  - There are multiple `model` files storing the same or overlapping information.
+  - Can we explore integrating these into **one or fewer models** to reduce redundancy, improve maintainability, and simplify the structure?  
