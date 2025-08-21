@@ -44,8 +44,14 @@
 
 - `Veristand.exe` no longer remains in the task manager (part of Resource Cleanup)  
   [USER STORY 3185748](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185748)
-
-  <img width="600" height="200" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" />
+  
+  <img width="600" height="200" alt="Screenshot 2025-08-20 134519" src="https://github.com/user-attachments/assets/4df26f32-bdd5-421b-8cbd-c851a78d149b" /><br>
+  
+  - Called `CloseVIAsync()` which was not being called earlier `--solved half of the test cases`
+  - Introducted `Unsubscribe()` using `Dispose()` for each VI close event
+    <br>
+    
+  <img width="821" height="600" alt="image" src="https://github.com/user-attachments/assets/e6c2265e-f111-4a8f-885c-a3d56fb57ce2" />
 
 ---
 
