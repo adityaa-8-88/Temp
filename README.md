@@ -60,14 +60,25 @@
 
 ---
 
-- **Control Library**: tested types → String, Boolean, File path, Numeric  
+- **Control Library**:
+  - Numeric
+  - String
+  - Boolean
+  - Data source (single, multi select)
+  - arrays 1d, 2d
+  - collapsible section (grouping)
+  - file path
+    
   [USER STORY 3185762](https://dev.azure.com/ni/DevCentral/_workitems/edit/3185762)
-
-  <img width="380" height="300" alt="Screenshot 2025-08-20 135143" src="https://github.com/user-attachments/assets/0216d3f0-bf85-4ca5-8838-c2f4ecd4b3a2" />
+<img width="305" height="417" alt="Screenshot 2025-09-01 131634" src="https://github.com/user-attachments/assets/30f3a164-d475-4152-beda-c14615a404ec" />
+<img width="2140" height="1347" alt="Screenshot 2025-09-01 120459" src="https://github.com/user-attachments/assets/72632f6e-3844-4c7d-a15e-2b9debe89c9b" />
+<img width="2793" height="1700" alt="Screenshot 2025-09-01 120803" src="https://github.com/user-attachments/assets/ad8138a4-0156-49e5-abbf-72f1f69bb336" />
+<img width="500" height="1100" alt="Screenshot 2025-09-01 120519" src="https://github.com/user-attachments/assets/34c9cf83-283c-4a91-bc27-9ccb1320560a" />
 
 ---
 
-- **Model Reduction**: There are multiple model files storing the same or overlapping information. So reduced 6 models to just 3 models. 
+- **Model Reduction**: There are multiple model files storing the same or overlapping information. So reduced 6 models to just 3 models.
+  
   [USER STORY 3245247](https://dev.azure.com/ni/DevCentral/_workitems/edit/3245247)
 
 <img width="2562" height="1260" alt="image" src="https://github.com/user-attachments/assets/43fca743-af04-4587-aba4-df39c343c5dd" />
