@@ -66,7 +66,9 @@ What if we don't allow wrong input in the System Explorer itself. If we do not a
 
 ## Final Verdict
 1. Now the project will open and throw a warning on the node and log a message in Errors and Warnings Section.
-<img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/0de820dd-d5a7-4234-82d3-36653efcca6d" />
-<img width="2428" height="422" alt="image" src="https://github.com/user-attachments/assets/ed569a15-7f04-467b-9150-340e0a9dd210" />
 
-2. System Explorer will not allow inputting wrong variable names for Calculated Channel.
+   <img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/0de820dd-d5a7-4234-82d3-36653efcca6d" />
+
+   <img width="2428" height="422" alt="image" src="https://github.com/user-attachments/assets/ed569a15-7f04-467b-9150-340e0a9dd210" />
+
+3. System Explorer will not allow inputting wrong variable names for Calculated Channel.
