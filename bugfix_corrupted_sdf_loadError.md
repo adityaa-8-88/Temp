@@ -4,7 +4,7 @@ This document captures the observed behavior of VeriStand when handling **corrup
 
 | **Scenario** | **Release Behavior** | **After Fix (Debug Mode)** |
 |--------------|-----------------------|-----------------------------|
-| **First Load of SDF with `"var0"` + `"var0 "`** | Load fails with error and do not allow project to open | Error logged, but deployment allowed |
+| **Corrupted SDF with `"var0"`+`"var0 "`** | Load fails with error and do not allow project to open | Error logged, but deployment allowed |
 | **External SDF edit with `"var0 "`** | Reload loop for 30s | Error logged, deployment allowed |
 | **System Explorer edit with `"var0 "`** | Reload loop for 30s | Error logged, deployment allowed |
 | **SDF with `"var0"` + `"var1 "`** | Error + Deployment succeeds | Error + Deployment succeeds |
