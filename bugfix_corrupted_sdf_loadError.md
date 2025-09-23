@@ -59,3 +59,14 @@ This document captures the observed behavior of VeriStand when handling **corrup
    <img width="400" height="140" alt="image" src="https://github.com/user-attachments/assets/e13ca4bd-bf34-4511-a076-71913069f471" />
 
    <img width="400" height="80" alt="image" src="https://github.com/user-attachments/assets/d20f831e-00d3-427d-ad4e-53b47b76faf7" />
+
+
+## System Explorer Changes:
+What if we don't allow wrong input in the System Explorer itself. If we do not allow from here itself then there remains only one way to corrupt the SDF that is Editing it Externally (which is not recommended also). And even if user try to corrupt the SDF externally then we have added error handling which will not throw any load error and Reload 30 sec type things. 
+
+## Final Verdict
+1. Now the project will open and throw a warning on the node and log a message in Errors and Warnings Section.
+<img width="400" height="210" alt="image" src="https://github.com/user-attachments/assets/0de820dd-d5a7-4234-82d3-36653efcca6d" />
+<img width="2428" height="422" alt="image" src="https://github.com/user-attachments/assets/ed569a15-7f04-467b-9150-340e0a9dd210" />
+
+2. System Explorer will not allow inputting wrong variable names for Calculated Channel.
